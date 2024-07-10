@@ -1,21 +1,106 @@
-Online Bookstore
-Project Overview
-This is a user-friendly online bookstore application built using Java. It allows users to browse, select, and purchase books. The application also includes an admin panel for managing the book inventory.
 
-Features
-User Features
-User Registration & Login: New users can register and existing users can log in.
-View Books: Users can browse available books with details such as title, author, price, and quantity.
-Select and Purchase Books: Users can select books, specify quantities, and add them to their cart.
-Secure Payments: Users can checkout and make secure payments.
-Payment Receipts: Users receive a payment receipt after a successful transaction.
-Admin Features
-Manage Books: Admins can add new books, update book details, and remove books from the inventory.
-Update Inventory: Admins can increase or decrease the quantity of books.
-Sales History: Admins can view and maintain the selling history of books.
-Technologies Used
-Java: Core programming language.
-JDBC : Used for database connectivity
-MySQL: Database for storing user and book information.
-Thymeleaf: Template engine for rendering HTML pages.
-Maven: Dependency management.
+# Online Bookstore
+
+## About
+
+A user-friendly Online Bookstore project in which users can log in or register, view the available books, select books along with their quantity, and buy them. Users can also get payment receipts after successful payment. The project can also be used by the administrator, who can add new books, remove books, increase and decrease the quantity of books, change the price of the books, as well as maintain the selling history of books.
+
+## Purpose
+
+This website is built for the following purposes:
+- Selling books online.
+- Maintaining books selling history.
+- Adding and managing books.
+- User-friendly interface.
+- Implementation of HTTP Servlets in Java.
+
+This is a mini-project developed using Java, JDBC, and Servlets.
+
+## Admin Features
+
+Admins have the following access:
+- Add new books.
+- View available books.
+- Remove books.
+- Increase the quantity of books.
+
+## User Features
+
+Users have the following access:
+- Create a new account or register.
+- Log in.
+- View available books.
+- Select books to buy.
+- Select book quantities.
+- Buy books.
+- Get payment receipts.
+
+## Technologies Used
+
+### Front-End Development
+- HTML
+- CSS
+- JavaScript
+- Bootstrap
+
+### Back-End Development
+- Java [JDK 8+]
+- JDBC
+- Servlet
+
+### Database
+- MySQL
+
+## Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yourusername/online-bookstore.git
+   cd online-bookstore
+   ```
+
+2. **Set up the database:**
+   - Install MySQL and create a database named `bookstore`.
+   - Import the `schema.sql` file to set up the necessary tables.
+
+3. **Configure application properties:**
+   - Update the `src/main/resources/application.properties` file with your MySQL database credentials.
+     ```properties
+     spring.datasource.url=jdbc:mysql://localhost:3306/bookstore
+     spring.datasource.username=root
+     spring.datasource.password=yourpassword
+     ```
+
+4. **Build the project:**
+   ```bash
+   mvn clean install
+   ```
+
+5. **Run the application:**
+   ```bash
+   mvn spring-boot:run
+   ```
+
+6. **Access the application:**
+   - Open your browser and go to `http://localhost:8080`.
+
+## Usage
+
+### User Actions
+- **Register/Login:** Access the registration and login pages from the homepage.
+- **Browse Books:** Navigate to the "Books" section to view available books.
+- **Add to Cart:** Select books and add them to your cart.
+- **Checkout:** Proceed to checkout to complete the purchase and receive a receipt.
+
+### Admin Actions
+- **Admin Login:** Access the admin panel via the admin login page.
+- **Manage Inventory:** Add, update, or remove books from the inventory.
+- **View Sales History:** Check the sales history for book transactions.
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and create a pull request with your changes.
+
+## License
+
+This project is licensed under the MIT License.
